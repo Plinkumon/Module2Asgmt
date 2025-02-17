@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress,Electonics and Cosmetics</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">eCART STORE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locations</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cloths</a></li>
+                                <li><a class="dropdown-item" href="#">Electronics</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cosmetics</a></li>
+                            </ul>
+                        </li>   
+                        
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+
+                        <div id="productContainer">
+                            <!-- Product results will appear here -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="carousel">
+        <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.instacart.com/company/wp-content/uploads/2023/12/408a-Deals-Week-Press-Campaign-1200x600-2.png"
+                        class="d-block w-100" alt="Img1">
+                    <div class="carousel-caption d-none d-md-block" style="color:#ef27b6;">
+                        <h4>Last Minute Gifting</h4>
+                        <p>eCart Store introduces 7 days of Deals</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pcmag.com/imagery/articles/02rGi25rr40tiEvj0T88FtY-6.fit_lim.v1720452346.png"
+                        class="d-block w-100" alt="Img2" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Circle week Deals</h4>
+                        <p>If you can't wait for Prime Day, Start Saving Now!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdnassets.hw.net/dims4/GG/b14f72b/2147483647/resize/480x%3E/quality/90/?url=https%3A%2F%2Fcdnassets.hw.net%2F31%2F21%2Fec48bb774fd9a7c31d8c135c96f8%2Fadobestock-629775658.jpeg"
+                        class="d-block w-100 img-fluid" alt="Img3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Latest AI products</h4>
+                        <p>The latest solutions for Owners and Operators</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    </section>
+
+
+    <section id="Itemlist">
+        <div class="container">
+            <h2>Products</h2>
+            <div class="grid text-center">
+                <div class="row flex-column flex-md-row g-4 justify-content-between align-items-center min-vh-100" >
+                    <div class="card" style="width: 18rem; height: 400px;" >
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                            class="card-img-top" alt="Bag">
+                        <div class="card-body">
+                            <h5 class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+                            <p class="card-text">$ 10.99</p>
+                            
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                            </div>
+                        </div>
+                              
+                              
+                        
+                    
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+                            class="card-img-top" alt="Hard Drive">
+                        <div class="card-body">
+                            <h5 class="card-title">WD 2TB Elements Portable External Hard Drive - USB 3.0</h5>
+                            <p class="card-text">$ 64</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+                            class="card-img-top" alt="Shirt">
+                        <div class="card-body">
+                            <h5 class="card-title">Mens Casual Slim Fit</h5>
+                            <p class="card-text">$ 15.99</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg"
+                            class="card-img-top" alt="Jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h5>
+                            <p class="card-text">$ 29.95</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg"
+                            class="card-img-top" alt="Rain Jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Rain Jacket Women Windbreaker Striped Climbing</h5>
+                            <p class="card-text">$ 9.85</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+                            class="card-img-top" alt="T Shirt">
+                        <div class="card-body">
+                            <h5 class="card-title">DANVOUY Womens T Shirt Casual Cotton Short</h5>
+                            <p class="card-text">$ 12.99</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+                            class="card-img-top" alt="SSD">
+                        <div class="card-body">
+                            <h5 class="card-title">Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h5>
+                            <p class="card-text">$ 109</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; height: 400px;">
+                        <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+                            class="card-img-top" alt="Gaming Monitor">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor</h5>
+                            <p class="card-text">$ 56.99</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                ADD TO CART
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login/Signup</h5>
+             <!--  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span> -->
+              </button>
+            </div>
+            <div class="modal-body">
+             You have to login/ signup to add items in your cart
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login/ Signup</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-dark text-white pt-4">
+        <div class="container">
+          <div class="row">
+            
+            <!-- About Section -->
+            <div class="col-md-3">
+              <h5>About Us</h5>
+              <p>We are committed to delivering the best services and products to our customers. Quality and satisfaction are our top priorities.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">About</a></li>
+                <li><a href="#" class="text-white">Services</a></li>
+                <li><a href="#" class="text-white">Contact</a></li>
+                <li><a href="#" class="text-white">Blog</a></li>
+              </ul>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="col-md-3">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-map-marker-alt"></i> 3300 Musgrave Street,Kakkanad, Kochi</li>
+                <li><i class="fas fa-phone"></i> +91 974 567 890</li>
+                <li><i class="fas fa-envelope"></i> ecartproductss@yahoo.com</li>
+              </ul>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="col-md-3">
+              <h5>Follow Us</h5>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <hr class="bg-light">
+          
+          <!-- Copyright Section -->
+          <div class="row">
+            <div class="col text-center">
+              <p class="mb-0">&copy; 2024 eCart productss. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      <!-- Font Awesome for Icons -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
